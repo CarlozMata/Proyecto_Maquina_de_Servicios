@@ -1,7 +1,10 @@
 function guardarDatos() {
-  let name = document.getElementById('name').value;
 
-  let text = name;
+  let name = document.getElementById('name').value;
+  let firstName = document.getElementById('firstName').value;
+  let email = document.getElementById('email').value;
+
+  let text = "Tú nombre es: " + name + " " + firstName + " y el correo es " + email;
 
   document.getElementById('textForm').innerHTML = text;
 /*
@@ -10,8 +13,4 @@ function guardarDatos() {
   } else {
     document.getElementById('textForm').innerHTML = "Tu no eres Carlos..";
   }*/
-  const userVerify = (name) => {
-    if (!name.enabled) return "El usuario no esta habilitado"; 
-    
-  }
 }
