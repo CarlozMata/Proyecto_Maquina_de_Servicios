@@ -1,8 +1,6 @@
 function guardarDatos() {
-  const user = {
-  const name = document.getElementById('name').value;
-  const firstName = document.getElementById('firstName').value;
-  }
+  let name = document.getElementById('name').value;
+
   let text = name;
 
   document.getElementById('textForm').innerHTML = text;
@@ -14,7 +12,6 @@ function guardarDatos() {
   }*/
   const userVerify = (name) => {
     if (!name.enabled) return "El usuario no esta habilitado"; 
-
-    return name
+    
   }
 }
