@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <nav>
-    <h1 class="title-nav">PAGO DE SERVICIOS</h1>
+    <h1 class="title-nav">PAGO DE SERVICIOS CON REACT</h1>
   </nav>
   <section class="section-dp">
     <div class="section-div-dp">
