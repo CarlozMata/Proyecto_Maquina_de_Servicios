@@ -5,11 +5,22 @@
 }
 
 nav {
-  background-color: red;
+  background-color: rgb(86, 218, 255);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+.title-nav {
+  color: rgba(146, 24, 24, 0.8);
+  font-size: 30px;
 }
 section {
-  background-color: blue;
+  background-color: rgb(241, 240, 240);
+  height: 500px;
 }
 footer {
-  background-color: aqua;
+  background-color: rgb(0, 0, 0);
+  height: 100px;
 }
