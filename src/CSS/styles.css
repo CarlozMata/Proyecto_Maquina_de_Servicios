@@ -28,15 +28,30 @@ section {
 .section-div-dp {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 8px;
   background-color: aquamarine;
+  padding: 10px;
+}
+.section-div-dp label{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width:80%;
 }
 .section-div-dp-btn {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
 }
-.section-div-dp button {
+.section-div-dp-btn textarea{
+  margin-top: 10px;
+  width: 100%;
+}
+.section-div-dp-btn input {
   height: 25px;
   width: 80px;
 }
