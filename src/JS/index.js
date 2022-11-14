@@ -7,9 +7,9 @@ function guardarDatos() {
   };
 
   const userRegistrado = {
-   name : document.getElementById('name').value,
-   firstName : document.getElementById('firstName').value,
-   email : document.getElementById('email').value
+  name : document.getElementById('name').value,
+  firstName : document.getElementById('firstName').value,
+  email : document.getElementById('email').value
   }
 
 //  let text = "Tú nombre es: " + name + " " + firstName + " y el correo es " + email;
