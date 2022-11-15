@@ -1,3 +1,5 @@
+//FORMULARIO 1
+
 function guardarDatos() {
 
   const usuario = {
@@ -25,8 +27,6 @@ function guardarDatos() {
   return document.getElementById('textForm').innerHTML = `Tu nombre es ${userRegistrado.name} ${userRegistrado.firstName} con correo electronico: ${userRegistrado.email} y si te encuentras registrado :D`;
   return userRegistrado.name === "" ? document.getElementById('textForm').innerHTML = "No estas registrado, prueba poniendo nombre: Carlos, Apellido: Lopez y Correo: carlos_1992_@hotmail.com y funcionara :)" : "Hola mundo";
 
-
-
 /*
   const userVerify = (userRegistrado) => {
     if (!userRegistrado.nombre === "") return  document.getElementById('textForm').innerHTML = "No ingreso un nombre";
@@ -35,3 +35,19 @@ function guardarDatos() {
   userVerify(userRegistrado);
 
 */}
+
+//FORMULARIO 2
+
+//const texto = document.getElementById('cadenaTexto').value
+//window.alert(texto)
+
+function metodosString () {
+
+  const texto = document.getElementById('cadenaTexto').value
+
+
+  const metodoLength = texto.length
+  window.alert(metodoLength)
+  metodoLength();
+  window.alert(metodoLength)
+}
