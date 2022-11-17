@@ -7,9 +7,12 @@ container.appendChild(element)
 */
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {App, Button} from "./App"
 
-const element = alert("Prueba")
+const ContainerBody = () => <div><Button/><App/></div>
+
+// const element = alert("Prueba")
 const container = document.getElementById('root')
 
 // ReactDOM.render(__QUE__, __DONDE__)
-ReactDOM.render(element,container)
+ReactDOM.render(<App/>, container)

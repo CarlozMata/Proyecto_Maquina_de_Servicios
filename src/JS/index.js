@@ -20,27 +20,35 @@ function guardarDatos() {
 }
 
 //FORMULARIO 2
+/*function metodosString () {//ASI ESTA FUNCIONANDO
 
-//const texto = document.getElementById('cadenaTexto').value
-//window.alert(texto)
-
-function metodosString () {
-
-  const texto = document.getElementById('cadenaTexto').value
+  const  texto = document.getElementById('cadenaTexto').value
 
   const metodoLength = texto.length
-//  const resultadoLength = metodoLength
-//  window.alert(resultadoLength)
-//  document.getElementById("metodoLength").appendChild(metodoLength);
-
+  const metodoToUpperCase = texto.toUpperCase()
 
   const node = document.createElement("span");
   const textnode = document.createTextNode(metodoLength);
   node.appendChild(textnode);
   document.getElementById("metodoLength").appendChild(node);
+}
+*/
+function metodosString () {
 
-  document.getElementById("metodoLength").appendChild(node);
+  const  texto = document.getElementById('cadenaTexto').value
 
+  const addResult = (element, result) => {
+//  console.log("result1: "+result);
+    const node = document.createElement("span");
+    const metodoLength = result;
+    const textnode = document.createTextNode(metodoLength);
+    node.appendChild(textnode);
+    document.getElementById("metodoLength").appendChild(node);
+  }
+
+  const size = texto.length
+  addResult(texto, size)
+//  addResult("arraySize", size)
 }
 
 /* CHEMA!!!
@@ -50,10 +58,6 @@ const addResult = (element, result) => {
   node.appendChild(textnode);
   document.getElementById(element).appendChild(node);
 }
-
-
-
-
 //
 
 contar elemtnso de un array:
