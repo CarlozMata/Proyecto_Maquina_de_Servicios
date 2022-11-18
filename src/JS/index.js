@@ -48,7 +48,6 @@ function metodosString () {
 
   const size = texto.length
   addResult(texto, size)
-//  addResult("arraySize", size)
 }
 
 /* CHEMA!!!

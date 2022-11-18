@@ -31,25 +31,48 @@ export function App() {
   function metodosString () {
 
     const  texto = document.getElementById('cadenaTexto').value
-  
-    const addResult = (element, result) => {
-  //  console.log("result1: "+result);
+
+    const resultLength = (element, result) => {
       const node = document.createElement("span");
       const metodoLength = result;
       const textnode = document.createTextNode(metodoLength);
       node.appendChild(textnode);
       document.getElementById("metodoLength").appendChild(node);
     }
-  
-    const size = texto.length
-    addResult(texto, size)
-  //  addResult("arraySize", size)
+    const textoLength = texto.length
+    resultLength(texto, textoLength)
+
+    const resultToUpperCase = (element, result) => {
+      const node = document.createElement("span");
+      const metodoToUpperCase = result;
+      const textnode = document.createTextNode(metodoToUpperCase);
+      node.appendChild(textnode);
+      document.getElementById("metodoToUpperCase").appendChild(node);
+    }
+
+    const textoToUpperCase = texto.toUpperCase();
+    resultToUpperCase(texto, textoToUpperCase)
+
+    const resultToLowerCase = (element, result) => {
+      const node = document.createElement("span");
+      const metodoToLowerCase = result;
+      const textnode = document.createTextNode(metodoToLowerCase);
+      node.appendChild(textnode);
+      document.getElementById("metodoToLowerCase").appendChild(node);
+    }
+
+    const textoToLowerCase = texto.toLowerCase();
+    resultToLowerCase(texto, textoToLowerCase)
+
+
   }
+
   return (
     <div id="" className="">
       <nav>
     <h1 class="title-nav">{`Paga tus Servicios: ${usuario.nombre}`}</h1>
   </nav>
+
   <section class="section-dp">
     <div class="section-div-dp">
       <form action="" name="form1">
@@ -72,7 +95,6 @@ export function App() {
 
 
 
-
       <h2>Métodos de String en Javascript:</h2><br/>
       <label>Ingresa una cadena de texto con espacios: <input type="text" id="cadenaTexto" name="CadenaTexto" placeholder="Por Ejemplo: Esta es en JavaScript" /></label>
       <h3>- Length</h3>
@@ -84,13 +106,12 @@ export function App() {
       <h3>- toLowerCase</h3>
       <p>A una serie de caracteres los devuelve en minúsculas.</p>
       <span id="metodoToLowerCase">toLowerCase: </span>
-      <br/><input type="button" value="Operar" onclick="metodosString();"/>
+      <br/><input type="button" value="Resolver Metodos" onClick={metodosString}/>
       <div class="section-div-dp-btn">
       </div>
 
 
 
-      
       </form>
     </div>
   </section>
