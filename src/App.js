@@ -64,13 +64,35 @@ export function App() {
     const textoToLowerCase = texto.toLowerCase();
     resultToLowerCase(texto, textoToLowerCase)
 
+    const resultTrim = (element, result) => {
+      const node = document.createElement("span");
+      const metodoTrim = result;
+      const textnode = document.createTextNode(metodoTrim);
+      node.appendChild(textnode);
+      document.getElementById("metodoTrim").appendChild(node);
+    }
+
+    const textoTrim = texto.trim();
+    resultTrim(texto, textoTrim)
+
+    const resultChartAt = (element, result) => {
+      const node = document.createElement("span");
+      const metodoChartAt = result;
+      const textnode = document.createTextNode(metodoChartAt);
+      node.appendChild(textnode);
+      document.getElementById("metodoChartAt").appendChild(node);
+    }
+
+    const textoChartAt = texto.chartAt(2);
+    resultChartAt(texto, textoChartAt)
 
   }
 
   return (
     <div id="" className="">
       <nav>
-    <h1 class="title-nav">{`Paga tus Servicios: ${usuario.nombre}`}</h1>
+      <h1 class="title-nav">{`Little Pay`}</h1>
+      <h2 class="title-nav">{`Usuario: ${usuario.nombre}`}</h2>
   </nav>
 
   <section class="section-dp">
@@ -106,6 +128,12 @@ export function App() {
       <h3>- toLowerCase</h3>
       <p>A una serie de caracteres los devuelve en minúsculas.</p>
       <span id="metodoToLowerCase">toLowerCase: </span>
+      <h3>- Trim</h3>
+      <p>Elimina los espacios en blanco de ambos extremos del string.</p>
+      <span id="metodoTrim">Trim: </span>
+      <h3>- ChartAt</h3>
+      <p>Devuelve un nuevo string el caracter UTF-16 de una cadena.</p>
+      <span id="metodoChartAt">ChartAt: </span>
       <br/><input type="button" value="Resolver Metodos" onClick={metodosString}/>
       <div class="section-div-dp-btn">
       </div>

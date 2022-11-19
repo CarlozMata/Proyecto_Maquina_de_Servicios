@@ -8,11 +8,14 @@ container.appendChild(element)
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {App, Button} from "./App"
+import { sideNav } from './sideMenu/sideMenu'
 
-const ContainerBody = () => <div><Button/><App/></div>
+const ContainerNav = () => <nav><sideNav/></nav>
+const ContainerBody = () => <div><App/></div>
 
-// const element = alert("Prueba")
 const container = document.getElementById('root')
+const sideNavBar = document.getElementById('sideNav')
 
 // ReactDOM.render(__QUE__, __DONDE__)
 ReactDOM.render(<App/>, container)
+//ReactDOM.render(<sideNav/>, sideNavBar)
